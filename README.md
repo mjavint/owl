@@ -1,3 +1,3 @@
-# Odoo Web Library (OWL)
+# Odoo Web Library (OWL) - Course
 
-- Servicio ORM
+- OWL - Servicio ORM
