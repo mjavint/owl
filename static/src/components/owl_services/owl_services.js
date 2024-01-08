@@ -17,10 +17,11 @@ export class OwlServices extends Component {
     });
 
     // Creamos la variable de estado partners
-    this.state = useState({ partners: [] });
+    this.state = useState({ partners: [], rpc_partners: [] });
     // this.state = useState({ partners: useService("owl.getPartners") });
     // Llamamos el servicio de ORM
     this.orm = useService("orm");
+    this.rpc = useService("rpc");
   }
 
   async getOrmService() {
@@ -30,6 +31,11 @@ export class OwlServices extends Component {
       ["image_128", "name", "website", "phone"]
     );
     this.state.partners = data;
+  }
+
+  async getRpcService() {
+    const data = await this.rpc("/owl/rpc_service", { limit: 6 });
+    this.state.rpc_partners = data;
   }
 }
 
