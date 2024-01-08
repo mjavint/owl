@@ -17,9 +17,10 @@ export class OwlServices extends Component {
     });
 
     // Creamos la variable de estado partners
-    this.state = useState({ partners: useService("owl.getPartners") });
+    this.state = useState({ partners: [] });
+    // this.state = useState({ partners: useService("owl.getPartners") });
     // Llamamos el servicio de ORM
-    // this.orm = useService("orm");
+    this.orm = useService("orm");
   }
 
   async getOrmService() {

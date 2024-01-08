@@ -13,10 +13,11 @@
                 <div class="row">
                     <div class="col m-4">
                         <button class="btn btn-primary" t-on-click="getOrmService">ORM Services</button>
+                        <button class="btn btn-primary ms-2" t-on-click="getRpcService">RPC Services</button>
                     </div>
                 </div>
                 <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-4">
-                    <t t-if="state.partners" t-foreach="state.partners.data" t-as="data" t-key="data.id">
+                    <t t-if="state.partners" t-foreach="state.partners" t-as="data" t-key="data.id">
                         <div class="col">
                             <div class="card">
                                 <img t-att-src="`data:image/png;base64,${data.image_128}`" class="card-img-top" t-att-alt="data.name"/>
