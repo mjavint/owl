@@ -17,16 +17,12 @@ export class OrmService extends Component {
     });
 
     this.state = useState({ partners: [] });
-    this.orm = useService("orm");
+    // this.orm = useService("orm");
+    this.getData = useService("owl.getOrmPartners");
   }
 
   async getOrmService() {
-    const data = await this.orm.searchRead(
-      "res.partner",
-      [],
-      ["image_128", "name", "website", "phone"]
-    );
-    this.state.partners = data;
+    this.state.partners = this.getData;
   }
 }
 

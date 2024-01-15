@@ -16,12 +16,11 @@ export class RpcService extends Component {
       },
     });
     this.state = useState({ partners: [] });
-    this.rpc = useService("rpc");
+    this.getData = useService("owl.getRpcPartners");
   }
 
   async getRpcService() {
-    const data = await this.rpc("/owl/rpc_service", { limit: 6 });
-    this.state.partners = data;
+    this.state.partners = this.getData;
   }
 }
 

@@ -8,6 +8,7 @@
     'category': 'Technical',
     'depends': ['base', 'web'],
     'data': [
+        'views/menus.xml',
         'views/orm_service_views.xml',
         'views/rpc_service_views.xml',
     ],

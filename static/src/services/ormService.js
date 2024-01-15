@@ -2,7 +2,7 @@
 
 import { registry } from "@web/core/registry";
 
-export const getPartners = {
+export const getOrmPartners = {
   dependencies: ["orm"],
   async start(env, { rpc, orm }) {
     const data = await orm.searchRead(
@@ -10,8 +10,8 @@ export const getPartners = {
       [],
       ["image_128", "name", "website", "phone"]
     );
-    return { data };
+    return data;
   },
 };
 
-registry.category("services").add("owl.getPartners", getPartners);
+registry.category("services").add("owl.getOrmPartners", getOrmPartners);
