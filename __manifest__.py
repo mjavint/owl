@@ -11,6 +11,7 @@
         'views/menus.xml',
         'views/orm_service_views.xml',
         'views/rpc_service_views.xml',
+        'views/posts_views.xml',
     ],
     'assets': {
         'web.assets_backend': ['owl/static/src/**/*'],
