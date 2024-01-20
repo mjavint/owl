@@ -8,6 +8,8 @@
             <br/>
             <span t-esc="props.post.body"/>
             <br/>
+            <button t-on-click="showNotification">Show Notification</button>
+            <button t-on-click="showDialog">Show Dialog</button>
             <hr/>
         </div>
     </t>
