@@ -19,9 +19,9 @@ export class EffectService extends Component {
 
   getEffect() {
     this.effectService.add({
-      type: "sepia",
-      //   type: "rainbow_man",
-      //   message: "El servcio esta funcionando correctamente",
+      // type: "sepia",
+      type: "rainbow_man",
+      message: "El servicio esta funcionando correctamente",
     });
   }
 }

@@ -8,6 +8,7 @@ import { useService } from "@web/core/utils/hooks";
 import { Component, useSubEnv, useState } from "@odoo/owl";
 import { PostItem } from "./post_item";
 
+
 export class Posts extends Component {
   setup() {
     useSubEnv({
