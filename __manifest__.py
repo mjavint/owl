@@ -14,6 +14,7 @@
         'views/posts_views.xml',
         'views/action_service_views.xml',
         'views/effect_service_views.xml',
+        'views/router_service_views.xml',
     ],
     'assets': {
         'web.assets_backend': ['owl/static/src/**/*'],
