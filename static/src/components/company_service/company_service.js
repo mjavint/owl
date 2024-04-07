@@ -17,11 +17,13 @@ export class CompanyService extends Component {
     });
     this.companyService = useService("company");
     this.state = useState({ current_company: "" });
+
+    this.titleService = useService("title");
   }
   getCurrentCompany() {
     const company = this.companyService;
     console.log(company);
-    this.state.current_company = JSON.stringify(company.allowedCompanies);
+    this.state.current_company = JSON.stringify(company);
   }
 }
 
