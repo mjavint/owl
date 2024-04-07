@@ -16,7 +16,7 @@ export class UserService extends Component {
       },
     });
     this.userService = useService("user");
-    this.state = useState({ current_user: {} });
+    this.state = useState({ current_user: "" });
   }
 
   getCurrentUser() {

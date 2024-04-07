@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Owl',
-    'version': '17.1.1',
+    'version': '17.0.1.0',
     'description': """ Owl Description """,
     'summary': """ Owl Summary """,
     'author': 'devtoolschool',
@@ -16,6 +16,7 @@
         'views/effect_service_views.xml',
         'views/router_service_views.xml',
         'views/user_service_views.xml',
+        'views/company_service_views.xml',
     ],
     'assets': {
         'web.assets_backend': ['owl/static/src/**/*'],
